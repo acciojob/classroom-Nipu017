@@ -12,10 +12,12 @@ public class StudentService {
     StudentRepository studentRepository;
 
     public void addStudent(Student student){
+
         studentRepository.saveStudent(student);
     }
 
     public void addTeacher(Teacher teacher){
+
         studentRepository.saveTeacher(teacher);
     }
 
@@ -24,10 +26,12 @@ public class StudentService {
     }
 
     public Student findStudent(String studentName){
+
         return studentRepository.findStudent(studentName);
     }
 
     public Teacher findTeacher(String teacherName){
+
         return studentRepository.findTeacher(teacherName);
     }
 
@@ -36,10 +40,12 @@ public class StudentService {
     }
 
     public List<String> findAllStudents(){
+
         return studentRepository.findAllStudents();
     }
 
     public void deleteTeacher(String teacher){
+
         studentRepository.deleteTeacher(teacher);
     }
 
